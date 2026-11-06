@@ -478,6 +478,106 @@ function MockScreen({
 export default function App() {
   return (
     <Deck>
+      {/* ── SLIDE 00: PEMBUKA (opening screen shown before the cover) ── */}
+      <Slide
+        center
+        nav="Pembukaan"
+        notes="Layar pembuka. Sapa audiens, sebutkan tujuan presentasi, lalu lanjut ke cover."
+        style={{ background: '#2B0B38', color: '#FFFFFF', border: 'none' }}
+      >
+        <div
+          aria-hidden
+          style={{
+            position: 'absolute',
+            right: -160,
+            top: -200,
+            width: 680,
+            height: 680,
+            borderRadius: '50%',
+            background: 'radial-gradient(circle, rgba(167,139,250,0.45), rgba(167,139,250,0) 68%)',
+          }}
+        />
+        <div
+          aria-hidden
+          style={{
+            position: 'absolute',
+            left: -180,
+            bottom: -240,
+            width: 620,
+            height: 620,
+            borderRadius: '50%',
+            background: 'radial-gradient(circle, rgba(213,196,247,0.28), rgba(213,196,247,0) 68%)',
+          }}
+        />
+        <Reveal>
+          <div
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: 10,
+              background: 'rgba(213, 196, 247, 0.16)',
+              border: '1px solid rgba(213, 196, 247, 0.32)',
+              color: '#D5C4F7',
+              padding: '7px 16px',
+              borderRadius: 999,
+              fontWeight: 700,
+              fontSize: 13,
+              letterSpacing: '0.12em',
+              marginBottom: 28,
+              fontFamily: 'var(--font-mono)',
+            }}
+          >
+            PEMBUKAAN
+          </div>
+          <h1
+            style={{
+              fontSize: 'clamp(40px, 6vw, 88px)',
+              fontWeight: 800,
+              letterSpacing: '-0.04em',
+              lineHeight: 1.04,
+              margin: '0 0 20px',
+              color: '#FFFFFF',
+            }}
+          >
+            Presentasi Sistem
+            <br />
+            <span style={{ color: '#D5C4F7' }}>HRIS Enterprise</span>
+          </h1>
+          <p
+            style={{
+              fontSize: 'clamp(16px, 1.8vw, 24px)',
+              color: 'rgba(255,255,255,0.78)',
+              margin: '0 auto 44px',
+              maxWidth: 900,
+              lineHeight: 1.5,
+            }}
+          >
+            RMJ Produksi · Dikembangkan oleh KolibriNektara Integrasi
+          </p>
+          <div
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: 12,
+              color: '#D5C4F7',
+              fontSize: 15,
+              fontWeight: 600,
+            }}
+          >
+            <span
+              style={{
+                width: 9,
+                height: 9,
+                borderRadius: '50%',
+                background: '#10B981',
+                boxShadow: '0 0 0 4px rgba(16,185,129,0.25)',
+              }}
+            />
+            Tekan → atau klik panah untuk memulai
+          </div>
+        </Reveal>
+      </Slide>
+
       {/* ── SLIDE 01: COVER (split layout + product mockups) ── */}
       <Slide
         nav="Cover"
