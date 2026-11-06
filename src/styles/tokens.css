@@ -1,0 +1,60 @@
+/* ===================================================================
+   THEME TOKENS — Editorial Lavender & Deep Aubergine
+   Matches the exact boutique agency / proposal template:
+   - Canvas: Crisp Pure White (#FFFFFF)
+   - Accent Tint: Soft Pastel Lavender (#D5C4F7)
+   - Primary Ink: Deep Midnight Plum (#190928)
+   - Muted Ink: Rich Plum Slate (#5D4B70)
+   - High Contrast Dark: Royal Aubergine (#2B0B38)
+   =================================================================== */
+:root {
+  /* Surfaces */
+  --bg: #ece5f8;
+  --bg-grad-1: transparent;
+  --bg-grad-2: transparent;
+  --surface: #ffffff;
+  --surface-2: #d8c7f8;
+  --surface-dark: #2b0b38;
+
+  /* Ink */
+  --fg: #190928;
+  --fg-muted: #5d4b70;
+  --fg-faint: #8e7b9e;
+
+  /* Hairlines */
+  --hair: rgba(90, 50, 130, 0.14);
+  --hair-2: rgba(90, 50, 130, 0.08);
+
+  /* Accent */
+  --primary: #2b0b38;
+  --accent: #2b0b38;
+  --accent-tint: #d8c7f8;
+  --accent-ink: #ffffff;
+
+  /* Radius */
+  --radius: 20px;
+  --radius-sm: 12px;
+  --radius-lg: 24px;
+
+  /* Depth */
+  --shadow: 0 16px 40px -12px rgba(40, 10, 60, 0.1);
+  --glow: none;
+
+  /* Type */
+  --font-head: 'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif;
+  --font-body: 'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* Motion */
+  --dur: 0.3s;
+  --ease: cubic-bezier(0.32, 0.72, 0, 1);
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Atmosphere */
+  --grain: 0;
+  --vignette: transparent;
+
+  /* Responsive gutters */
+  --gutter: clamp(32px, 5.5vw, 84px);
+  --gutter-y: clamp(28px, 5.5vh, 64px);
+}

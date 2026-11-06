@@ -1,0 +1,11 @@
+node_modules
+dist
+.vercel
+.env*
+# browser automation output (contains logs/snapshots from the live portal)
+.playwright-mcp
+# generated decks and preview captures, not needed to build the site
+*.pptx
+public/screenshots/slide-deck-preview-*
+public/screenshots/t
+/screenshots
